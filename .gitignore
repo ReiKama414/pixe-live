@@ -1,0 +1,32 @@
+# 依賴
+node_modules/
+
+# 建置產物
+dist/
+*.tsbuildinfo
+
+# 環境與本機密鑰
+.env*
+!.env.example
+.dev.vars
+
+# Cloudflare / Wrangler
+.wrangler/
+
+# 測試與覆蓋率
+coverage/
+*.lcov
+
+# 日誌與暫存
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*~
