@@ -26,15 +26,11 @@ npm run build
 開發伺服器：http://localhost:5173  
 正式建置產物輸出至 `dist/`。
 
-建置 GitHub Pages 版（含 `base` 與 SPA `404.html` 回退）：
+GitHub Pages 建置：
 
 ```sh
 npm run build:pages
 ```
-
-> **換頁會 404 嗎？**  
-> 站內 `<Link>`／`navigate` 是前端路由，不會 404。  
-> 直接開啟或重新整理 `/live/yuki` 這類路徑時，GitHub Pages 沒有伺服器 rewrite，因此建置時會複製 `index.html` → `404.html`，讓瀏覽器網址保持原路徑、由 React Router 接手。Cloudflare Workers 則用 SPA `not_found_handling`，兩邊都能深連結。
 
 ## 體驗網路恢復 Demo
 
